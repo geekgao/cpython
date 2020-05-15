@@ -23,8 +23,8 @@ extern "C" {
 #define BINARY_MULTIPLY          20
 #define BINARY_MODULO            22
 #define BINARY_ADD               23
-#define BINARY_SUBTRACT          24
-#define BINARY_SUBSCR            25
+#define BINARY_SUBTRACT          141
+#define BINARY_SUBSCR            157
 #define BINARY_FLOOR_DIVIDE      26
 #define BINARY_TRUE_DIVIDE       27
 #define INPLACE_FLOOR_DIVIDE     28
@@ -66,8 +66,8 @@ extern "C" {
 #define END_FINALLY              88
 #define POP_EXCEPT               89
 #define HAVE_ARGUMENT            90
-#define STORE_NAME               90
-#define DELETE_NAME              91
+#define STORE_NAME               155
+#define DELETE_NAME              143
 #define UNPACK_SEQUENCE          92
 #define FOR_ITER                 93
 #define UNPACK_EX                94
@@ -107,9 +107,9 @@ extern "C" {
 #define LOAD_DEREF              136
 #define STORE_DEREF             137
 #define DELETE_DEREF            138
-#define CALL_FUNCTION_KW        141
-#define CALL_FUNCTION_EX        142
-#define SETUP_WITH              143
+#define CALL_FUNCTION_KW        142
+#define CALL_FUNCTION_EX        156
+#define SETUP_WITH              91
 #define EXTENDED_ARG            144
 #define LIST_APPEND             145
 #define SET_ADD                 146
@@ -121,12 +121,12 @@ extern "C" {
 #define BUILD_TUPLE_UNPACK      152
 #define BUILD_SET_UNPACK        153
 #define SETUP_ASYNC_WITH        154
-#define FORMAT_VALUE            155
-#define BUILD_CONST_KEY_MAP     156
-#define BUILD_STRING            157
+#define FORMAT_VALUE            90
+#define BUILD_CONST_KEY_MAP     24
+#define BUILD_STRING            25
 #define BUILD_TUPLE_UNPACK_WITH_CALL 158
-#define LOAD_METHOD             160
-#define CALL_METHOD             161
+#define LOAD_METHOD             161
+#define CALL_METHOD             160
 
 /* EXCEPT_HANDLER is a special, implicit block type which is created when
    entering an except handler. It is not an opcode but we define it here
