@@ -76,8 +76,8 @@ def_op('BINARY_MULTIPLY', 20)
 
 def_op('BINARY_MODULO', 22)
 def_op('BINARY_ADD', 23)
-def_op('BINARY_SUBTRACT', 24)
-def_op('BINARY_SUBSCR', 25)
+def_op('BINARY_SUBTRACT', 141)
+def_op('BINARY_SUBSCR', 157)
 def_op('BINARY_FLOOR_DIVIDE', 26)
 def_op('BINARY_TRUE_DIVIDE', 27)
 def_op('INPLACE_FLOOR_DIVIDE', 28)
@@ -127,8 +127,8 @@ def_op('POP_EXCEPT', 89)
 
 HAVE_ARGUMENT = 90              # Opcodes from here have an argument:
 
-name_op('STORE_NAME', 90)       # Index in name list
-name_op('DELETE_NAME', 91)      # ""
+name_op('STORE_NAME', 155)       # Index in name list
+name_op('DELETE_NAME', 143)      # ""
 def_op('UNPACK_SEQUENCE', 92)   # Number of tuple items
 jrel_op('FOR_ITER', 93)
 def_op('UNPACK_EX', 94)
@@ -183,10 +183,10 @@ hasfree.append(137)
 def_op('DELETE_DEREF', 138)
 hasfree.append(138)
 
-def_op('CALL_FUNCTION_KW', 141)  # #args + #kwargs
-def_op('CALL_FUNCTION_EX', 142)  # Flags
+def_op('CALL_FUNCTION_KW', 142)  # #args + #kwargs
+def_op('CALL_FUNCTION_EX', 156)  # Flags
 
-jrel_op('SETUP_WITH', 143)
+jrel_op('SETUP_WITH', 91)
 
 def_op('LIST_APPEND', 145)
 def_op('SET_ADD', 146)
@@ -206,12 +206,12 @@ def_op('BUILD_SET_UNPACK', 153)
 
 jrel_op('SETUP_ASYNC_WITH', 154)
 
-def_op('FORMAT_VALUE', 155)
-def_op('BUILD_CONST_KEY_MAP', 156)
-def_op('BUILD_STRING', 157)
+def_op('FORMAT_VALUE', 90)
+def_op('BUILD_CONST_KEY_MAP', 24)
+def_op('BUILD_STRING', 25)
 def_op('BUILD_TUPLE_UNPACK_WITH_CALL', 158)
 
-name_op('LOAD_METHOD', 160)
-def_op('CALL_METHOD', 161)
+name_op('LOAD_METHOD', 161)
+def_op('CALL_METHOD', 160)
 
 del def_op, name_op, jrel_op, jabs_op
